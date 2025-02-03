@@ -8,7 +8,7 @@ export const GetServerExample = (): JSX.Element => {
         serverId: '2466f276-8f5d-4c8b-b965-23b8f3005886'
     }
 
-    const { data: getServerData, isPending: getServerIsPending, isError: getServerIsError, isSuccess: getServerIsSuccess, error: getServerError } = useSardonyxQuery(client.orchestration.getServerById, ['get-server'], getServerParams)
+    const { data: getServerData, isPending: getServerIsPending, isError: getServerIsError, isSuccess: getServerIsSuccess, error: getServerError } = client.orchestration.getServerById(getServerParams)
 
     useEffect(() => {
         console.log(getServerData)
@@ -31,7 +31,7 @@ export const LoginExample = (): JSX.Element => {
         password: "Sardonyx24*"
     }
 
-    const { data: postLoginData, isPending: postLoginIsPending, isError: postLoginIsError, isSuccess: postLoginIsSuccess, error: postLoginError } = useSardonyxQuery(client.users.login, ['user-login'], postUserLoginParams)
+    const { data: postLoginData, isPending: postLoginIsPending, isError: postLoginIsError, isSuccess: postLoginIsSuccess, error: postLoginError } = client.users.login(postUserLoginParams)
 
     useEffect(() => {
         console.log(postLoginData)
@@ -49,7 +49,7 @@ export const LoginExample = (): JSX.Element => {
 }
 
 export const GetEmailsExample = (): JSX.Element => {
-    const { data: getEmailsData, isPending: getEmailsIsPending, isError: getEmailsIsError, isSuccess: getEmailsIsSuccess, error: getEmailsError } = useSardonyxQuery(client.core.getEmails, ['get-emails'])
+    const { data: getEmailsData, isPending: getEmailsIsPending, isError: getEmailsIsError, isSuccess: getEmailsIsSuccess, error: getEmailsError } = client.core.getEmails()
 
     useEffect(() => {
         console.log(getEmailsData)

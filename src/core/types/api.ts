@@ -6,3 +6,8 @@ export interface GetEmailResponse {
     content: string
     date: Date
 }
+
+export interface PagedQueryParams {
+    page: number
+    perPage: number
+}

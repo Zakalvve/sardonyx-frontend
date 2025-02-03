@@ -1,3 +1,4 @@
+import { PagedQueryParams } from "@/core/types/api"
 import { QueryParams } from "@/core/types/querying"
 
 export interface OrchestrationServer  {
@@ -9,3 +10,5 @@ export interface OrchestrationServer  {
 export interface GetServerParams extends QueryParams {
     serverId: string
 }
+
+export type GetServersParams = PagedQueryParams;

@@ -1,6 +1,7 @@
 import api from "@/core/api/api"
 import { UserLogin, UserLoginResponse } from "@/modules/users/types/api"
 import { AxiosResponse } from "axios"
+import { useSardonyxQuery } from "@/core/hooks/use-query";
 
 
 export const postUserLogin = (params: UserLogin): Promise<AxiosResponse<UserLoginResponse>> => {
@@ -8,7 +9,7 @@ export const postUserLogin = (params: UserLogin): Promise<AxiosResponse<UserLogi
 }
 
 const userClient = {
-    login: postUserLogin
+    login: (params: UserLogin) => useSardonyxQuery(postUserLogin, ['user-login'], params)
 }
 
 export default userClient;
