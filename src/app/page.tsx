@@ -1,10 +1,10 @@
 "use client";
 
 import { CommandOption, Option } from '@/core/types/ui'
-import ComboBox from "@/core/components/ui/combobox";
 import { Separator } from "@radix-ui/react-separator";
 import { useState } from 'react';
-import { TestTable } from '@/modules/orchestration/components/servers-data-table';
+import { ServerCard, ServersDataTable } from '@/modules/orchestration/components/serversDataTable';
+import ComboBox from '@/core/components/ui/comboBox';
 
 export default function Home() {
   const options = [
@@ -42,7 +42,8 @@ export default function Home() {
         </div>
       </header>
       <div className="flex flex-1 flex-col gap-4 p-4 pt-0 container">
-        <TestTable test="hey"/>
+        <ServersDataTable test="hey" params={{page: 1, perPage: 2}}/>
+        <ServerCard params={{serverId: '2466f276-8f5d-4c8b-b965-23b8f3005886'}}/>
       </div>
     </>
   );

@@ -2,7 +2,7 @@
 
 import React, { useEffect, useMemo, useRef, useState } from 'react';
 import { Virtuoso, VirtuosoHandle } from 'react-virtuoso';
-import { useLogging } from '@/core/hooks/use-logging';
+import { useLogging } from '@/core/hooks/useLogging';
 import { Checkbox } from '@/core/components/ui/checkbox';
 import { Button} from '@/core/components/ui/button';
 

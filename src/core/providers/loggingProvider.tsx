@@ -9,7 +9,7 @@ import React, {
 
 import * as signalR from '@microsoft/signalr';
 import { LogEntry } from '@/core/types/logging';
-import { LoggingContext } from '@/core/context/logging-context';
+import { LoggingContext } from '@/core/context/loggingContext';
 
 export const LoggingProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
     const [logs, setLogs] = useState<LogEntry[]>([]);

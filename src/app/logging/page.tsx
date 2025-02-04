@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import LogViewer from '@/core/components/log-viewer';
+import LogViewer from '@/core/components/logViewer';
 
 const LogsPage: React.FC = () => {
   return (

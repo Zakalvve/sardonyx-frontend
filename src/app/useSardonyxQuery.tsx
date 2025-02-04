@@ -1,3 +1,5 @@
+"use-client"
+
 import { useQuery } from '@tanstack/react-query'
 import { AxiosResponse } from 'axios'
 import { QueryParamsOrUndefined, QueryResult } from '@/core/types/querying';

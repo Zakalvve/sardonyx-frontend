@@ -1,5 +1,5 @@
 import { JSX, useEffect } from "react"
-import { useSardonyxQuery } from "@/core/hooks/use-query"
+import { useSardonyxQuery } from "@/core/hooks/useSardonyxQuery"
 import client from "@/core/api/sardonyx-client"
 
 export const GetServerExample = (): JSX.Element => {

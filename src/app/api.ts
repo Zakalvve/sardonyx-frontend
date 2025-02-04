@@ -1,7 +1,6 @@
 import { PagedQuery, PagedResponse, QueryParams } from "@/core/types/querying"
 
 export interface OrchestrationServer  {
-    id: string
     displayName: string
     url: string
     description: string

@@ -1,6 +1,6 @@
 import coreClient from "@/core/api/core-client";
-import userClient from "@/modules/users/api/user-client";
-import orchestratonClient from "@/modules/orchestration/api/orchestration-client";
+import userClient from "@/modules/users/api/userClient";
+import orchestratonClient from "@/modules/orchestration/api/orchestrationClient";
 
 const client = {
     core: coreClient,

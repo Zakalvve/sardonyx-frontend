@@ -1,8 +1,8 @@
 "use client";
 
 import { AppSidebar } from "@/core/components/app-sidebar"
-import { GetEmailsExample, GetServerExample, LoginExample } from "@/core/components/client-examples"
-import LogViewer from "@/core/components/log-viewer";
+import { GetEmailsExample, GetServerExample, LoginExample } from "@/core/components/clientExamples"
+import LogViewer from "@/core/components/logViewer";
 import {
   Breadcrumb,
   BreadcrumbItem,
